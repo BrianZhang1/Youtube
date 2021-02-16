@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
 body {
     margin: 0px;
 }
@@ -150,7 +152,8 @@ body {
 
 .title:before {
     content: "Never Gonna Give You Up <3";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .data {
@@ -166,18 +169,161 @@ body {
 .views-date:before {
     content: "70,123 views : Aug 29, 2019";
     color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
 }
 
 .likes-sharing {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .likes-dislikes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.likes {
+    margin-right: 20px;
+}
+
+.likes:before {
+    content: "23K";
+    color: #606060;
+    font-size: 0.85rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.dislikes {
+    margin-right: 20px;
+}
+
+.dislikes:before {
+    content: "12";
+    color: #606060;
+    font-size: 0.85rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.share {
+    margin-right: 20px;
+}
+
+.share:before {
+    content: "SHARE";
+    color: #606060;
+    font-size: 0.85rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .section2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.creator-picture {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 20px;
+}
+
+.video-stuff {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.channel-stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.channel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.channel-name {
+}
+
+.channel-name:before {
+    content: "Some Guy";
+    font-family: "Roboto", sans-serif;
+}
+
+.subscribers {
+}
+
+.subscribers:before {
+    content: "803K subscribers";
+    color: #606060;
+    font-size: 0.9rem;
+}
+
+.channel-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.join-button {
+    position: relative;
+    height: 35px;
+    outline: 1px solid #2660d7;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.join-button:before {
+    position: relative;
+    content: "JOIN";
+    font-family: "Roboto", sans-serif;
+    color: #2660d7;
+}
+
+.subscribe-button {
+    position: relative;
+    height: 35px;
+    background-color: #c30000;
+    outline: 1px solid #c30000;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-button:before {
+    position: relative;
+    content: "SUBSCRIBE";
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.description:before {
+    content: "Here's a description. \a I linebreak by using \\a and also setting white-space to preserved (pre).";
+    white-space: pre;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
 }
 
 .section3 {
