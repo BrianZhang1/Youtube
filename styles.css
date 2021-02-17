@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
     margin: 0px;
@@ -134,13 +134,15 @@ body {
 }
 
 .other-stuff {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 78%;
     margin-right: 2%;
 }
 
 .section1 {
+    position: relative;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #e0e0e0;
@@ -156,7 +158,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.data {
+.video-stats {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,22 +187,33 @@ body {
     align-items: center;
 }
 
-.likes {
+.small-icon {
+    height: 20px;
+    margin-right: 7px;
+}
+
+.like-amount-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     margin-right: 20px;
 }
 
-.likes:before {
+.like-amount:before {
     content: "23K";
     color: #606060;
     font-size: 0.85rem;
     font-family: "Roboto", sans-serif;
 }
 
-.dislikes {
+.dislike-amount-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     margin-right: 20px;
 }
 
-.dislikes:before {
+.dislike-amount:before {
     content: "12";
     color: #606060;
     font-size: 0.85rem;
@@ -220,6 +233,7 @@ body {
 
 .section2 {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     margin-top: 20px;
     border-bottom: 1px solid #e0e0e0;
@@ -237,7 +251,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
-    width: 100%;
+    flex: auto;
 }
 
 .channel-stuff {
@@ -327,10 +341,202 @@ body {
 }
 
 .section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.comment-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.comment-amount {
+    position: relative;
+    margin-right: 30px;
+}
+
+.comment-amount:before {
+    content: "135 Comments";
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+.sort-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sort-icon {
+    height: 10px;
+    margin-right: 10px;
+}
+
+.sort-text:before {
+    content: "SORT BY";
+    color: #606060;
+    font-size: 0.85rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.comment-create {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex: auto;
+}
+
+.comment-create-profile-picture {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.comment-create-input {
+    flex: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comment-create-input:before {
+    content: "Add a public comment...";
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.comment-1 {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+.comment-profile-picture {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.comment-info {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.comment-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.comment-name:before {
+    content: "Brian is cool";
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.comment-date:before {
+    content: "7 months ago";
+    color: #606060;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.comment-content:before {
+    content: "This is a comment! Wooo!";
+    white-space: pre;
+    color: black;
+    font-size: 0.85rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+}
+
+.comment-like-dislike {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.comment-like-amount-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment-like-icon {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.comment-like-amount {
+    margin-right: 20px;
+}
+
+.comment-like-amount:before {
+    content: "1.7K";
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.82rem;
+}
+
+.comment-dislike-icon {
+    height: 15px;
+    margin-right: 30px;
+}
+
+.reply-button:before {
+    content: "REPLY";
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.comment-view-replies-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment-view-replies-icon {
+    height: 4px;
+    margin-right: 15px;
+}
+
+.comment-view-replies-text:before {
+    content: "View 107 replies";
+    color: #2660d7;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
 }
 
 .recommended-videos {
     display: flex;
     flex-direction: column;
-    width: 23%;
+    width: 20%;
 }
