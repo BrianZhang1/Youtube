@@ -8,8 +8,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
-    width: 100vw;
-    height: 55px;
+    width: 100%;
+    height: 8.3vh;
     background-color: #252525;
     display: flex;
     justify-content: space-between;
@@ -122,22 +122,21 @@ body {
 
 .content {
     position: relative;
-    width: 90vw;
     height: 1000px;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .other-stuff {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 78%;
+    flex: 4 1 0;
     margin-right: 2%;
 }
 
@@ -154,7 +153,7 @@ body {
 
 .title:before {
     content: "Never Gonna Give You Up <3";
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: "Roboto", sans-serif;
 }
 
@@ -273,6 +272,8 @@ body {
 .channel-name:before {
     content: "Some Guy";
     font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .subscribers {
@@ -363,7 +364,7 @@ body {
     content: "135 Comments";
     color: black;
     font-family: "Roboto", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .sort-wrapper {
@@ -396,11 +397,11 @@ body {
 
 .comment-create-profile-picture {
     position: relative;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: green;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .comment-create-input {
@@ -423,18 +424,19 @@ body {
     margin-top: 30px;
 }
 
-.comment-1 {
+.comment {
     display: flex;
     flex-direction: row;
     flex: auto;
+    margin-bottom: 30px;
 }
 
 .comment-profile-picture {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: green;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .comment-info {
@@ -453,8 +455,8 @@ body {
     content: "Brian is cool";
     color: black;
     font-family: "Roboto", sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 500;
     margin-right: 5px;
 }
 
@@ -538,5 +540,59 @@ body {
 .recommended-videos {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    flex: 2 1 0;
+}
+
+.recommended-video {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.recommended-video-thumbnail {
+    width: 168px;
+    height: 94px;
+    margin-right: 10px;
+}
+
+.recommended-video-information {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+}
+
+.recommended-video-title {
+    margin-bottom: 5px;
+}
+
+.recommended-video-title:before {
+    content: "Look at this BABY TURTLE run in circles!";
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.recommended-video-creator {
+}
+
+.recommended-video-creator:before {
+    content: "Louis Rossmann";
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.recommended-video-views-date {
+}
+
+.recommended-video-views-date:before {
+    content: "3.2M views : 5 years ago";
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
