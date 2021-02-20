@@ -6,6 +6,5 @@ Oh yeah and also, I feel like if I can make a website with a reference, I'll pro
 
 #To Do
 
--   Change the text so it isn't using the :before pseudo element to display text. This is bad since I wont be able to change the text in the future.
--   Create "Search" text in searchbar in navbar
+-   Implement the JavaScript for the buttons.
 -   Do the backend, duh. Actually, maybe I wont do backend for this.
