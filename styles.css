@@ -4,6 +4,13 @@ body {
     margin: 0px;
 }
 
+p {
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -147,6 +154,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: auto;
+    margin-right: 20px;
 }
 
 .section1 {
@@ -170,9 +178,6 @@ body {
 
 .views-date {
     margin-bottom: 20px;
-    color: #606060;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.85rem;
 }
 
 .likes-sharing {
@@ -200,9 +205,6 @@ body {
 }
 
 .like-amount {
-    color: #606060;
-    font-size: 0.85rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .dislike-amount-wrapper {
@@ -213,20 +215,10 @@ body {
 }
 
 .dislike-amount {
-    color: #606060;
-    font-size: 0.85rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .share {
     margin-right: 20px;
-}
-
-.share:before {
-    content: "SHARE";
-    color: #606060;
-    font-size: 0.85rem;
-    font-family: "Roboto", sans-serif;
 }
 
 .section2 {
@@ -362,13 +354,6 @@ body {
     margin-right: 10px;
 }
 
-.sort-text:before {
-    content: "SORT BY";
-    color: #606060;
-    font-size: 0.85rem;
-    font-family: "Roboto", sans-serif;
-}
-
 .comment-create {
     position: relative;
     display: flex;
@@ -391,13 +376,6 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid #e0e0e0;
-}
-
-.comment-create-input:before {
-    content: "Add a public comment...";
-    color: #606060;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.85rem;
 }
 
 .comment-section {
@@ -449,8 +427,6 @@ body {
 
 .comment-content {
     color: black;
-    font-size: 0.85rem;
-    font-family: "Roboto", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -475,9 +451,6 @@ body {
 
 .comment-like-amount {
     margin-right: 20px;
-    color: #606060;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.82rem;
 }
 
 .comment-dislike-icon {
