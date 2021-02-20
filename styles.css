@@ -50,6 +50,16 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: #303030;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-text {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #888888;
+    font-weight: 400;
 }
 
 .searchbutton {
@@ -148,10 +158,6 @@ body {
 
 .title {
     margin-bottom: 15px;
-}
-
-.title:before {
-    content: "Never Gonna Give You Up <3";
     font-size: 1.1rem;
     font-family: "Roboto", sans-serif;
 }
@@ -164,10 +170,6 @@ body {
 
 .views-date {
     margin-bottom: 20px;
-}
-
-.views-date:before {
-    content: "70,123 views : Aug 29, 2019";
     color: #606060;
     font-family: "Roboto", sans-serif;
     font-size: 0.85rem;
@@ -197,8 +199,7 @@ body {
     margin-right: 20px;
 }
 
-.like-amount:before {
-    content: "23K";
+.like-amount {
     color: #606060;
     font-size: 0.85rem;
     font-family: "Roboto", sans-serif;
@@ -211,8 +212,7 @@ body {
     margin-right: 20px;
 }
 
-.dislike-amount:before {
-    content: "12";
+.dislike-amount {
     color: #606060;
     font-size: 0.85rem;
     font-family: "Roboto", sans-serif;
@@ -266,20 +266,12 @@ body {
 }
 
 .channel-name {
-}
-
-.channel-name:before {
-    content: "Some Guy";
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
 }
 
 .subscribers {
-}
-
-.subscribers:before {
-    content: "803K subscribers";
     color: #606060;
     font-size: 0.9rem;
 }
@@ -330,11 +322,6 @@ body {
 
 .description {
     margin-bottom: 20px;
-}
-
-.description:before {
-    content: "Here's a description. \a I linebreak by using \\a and also setting white-space to preserved (pre).";
-    white-space: pre;
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: 0.9rem;
@@ -357,10 +344,6 @@ body {
 .comment-amount {
     position: relative;
     margin-right: 30px;
-}
-
-.comment-amount:before {
-    content: "135 Comments";
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
@@ -450,8 +433,7 @@ body {
     margin-bottom: 5px;
 }
 
-.comment-name:before {
-    content: "Brian is cool";
+.comment-name {
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: 0.8rem;
@@ -459,16 +441,13 @@ body {
     margin-right: 5px;
 }
 
-.comment-date:before {
-    content: "7 months ago";
+.comment-date {
     color: #606060;
     font-size: 0.8rem;
     font-family: "Roboto", sans-serif;
 }
 
-.comment-content:before {
-    content: "This is a comment! Wooo!";
-    white-space: pre;
+.comment-content {
     color: black;
     font-size: 0.85rem;
     font-family: "Roboto", sans-serif;
@@ -496,10 +475,6 @@ body {
 
 .comment-like-amount {
     margin-right: 20px;
-}
-
-.comment-like-amount:before {
-    content: "1.7K";
     color: #606060;
     font-family: "Roboto", sans-serif;
     font-size: 0.82rem;
@@ -529,8 +504,7 @@ body {
     margin-right: 15px;
 }
 
-.comment-view-replies-text:before {
-    content: "View 107 replies";
+.comment-view-replies-text {
     color: #2660d7;
     font-family: "Roboto", sans-serif;
     font-size: 0.9rem;
@@ -566,8 +540,7 @@ body {
     margin-bottom: 5px;
 }
 
-.recommended-video-title:before {
-    content: "Look at this BABY TURTLE run in circles!";
+.recommended-video-title {
     color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -575,10 +548,6 @@ body {
 }
 
 .recommended-video-creator {
-}
-
-.recommended-video-creator:before {
-    content: "Louis Rossmann";
     color: #606060;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -586,10 +555,6 @@ body {
 }
 
 .recommended-video-views-date {
-}
-
-.recommended-video-views-date:before {
-    content: "3.2M views : 5 years ago";
     color: #606060;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
